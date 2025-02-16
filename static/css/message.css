@@ -1,0 +1,64 @@
+.messages {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: none; /* Initially hidden */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  width: 400px; /* Increased width */
+  max-width: 90%; /* Responsive max width */
+  animation: fadeIn 0.5s; /* Fade-in animation */
+}
+
+.message-content {
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 0px; /* Adjusted for better positioning */
+  right: 15px; /* Aligns to the left */
+  font-size: 30px; /* Increased size */
+  cursor: pointer;
+  color: #aaa;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.close-button:hover {
+  color: #ff0000; /* Change color on hover */
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message.success .icon {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 24px; /* Icon size */
+  color: #155724; /* Icon color */
+}
+
+/* Other message styles remain unchanged */
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
