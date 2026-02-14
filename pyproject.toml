@@ -1,18 +1,21 @@
-[tool.poetry.project]
+[project]
 name = "django-template"
 version = "0.1.0"
 description = "My Django project ready for Vercel"
-authors = ["Your Name <your.email@example.com>"]
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "Django>=5.0",
+    "gunicorn>=21.2.0",
+    "whitenoise>=6.6.0",
+]
+
+[tool.poetry]
+# You can keep this here for local Poetry use, 
+# but uv ignores it in favor of the [project] table above.
 packages = [{ include = "django_project" }]
-
-[tool.poetry.dependencies]
-python = "^3.12"
-Django = "^5.0"
-gunicorn = "^21.2.0"
-whitenoise = "^6.6.0"
-
-[tool.poetry.dev-dependencies]
-# pytest = "^7.3" (optional)
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
