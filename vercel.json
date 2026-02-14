@@ -6,7 +6,7 @@
       "config": { "distDir": "staticfiles" }
     },
     {
-      "src": "project_name/wsgi.py",
+      "src": "django_project/wsgi.py",
       "use": "@vercel/python"
     }
   ]
