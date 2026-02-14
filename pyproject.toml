@@ -2,7 +2,7 @@
 name = "django-template"
 version = "0.1.0"
 description = "My Django project ready for Vercel"
-authors = ["Tharcisse irasubiza irasubizatharcisse23@gmail.com"]
+authors = ["Your Name <your.email@example.com>"]
 packages = [{ include = "django_project" }]
 
 [tool.poetry.dependencies]
