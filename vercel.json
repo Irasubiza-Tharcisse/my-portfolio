@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "build.sh",
@@ -9,5 +10,9 @@
       "src": "django_project/wsgi.py",
       "use": "@vercel/python"
     }
+  ],
+  "routes": [
+    { "src": "/static/(.*)", "dest": "/static/$1" },
+    { "src": "/(.*)", "dest": "django_project/wsgi.py" }
   ]
 }
