@@ -24,10 +24,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'my-portofolio'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ["https://bf32a54c-9a83-4c05-9a8a-0106dcc9ee10-00-3l82wvlfox9dk.janeway.repl.co","https://bf32a54c-9a83-4c05-9a8a-0106dcc9ee10-00-3l82wvlfox9dk.janeway.replit.dev"]
+ALLOWED_HOSTS = ['.vercel.app']
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.vercel.app"
+]
+
 
 # Application definition
 
